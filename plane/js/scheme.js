@@ -145,7 +145,7 @@ function checkedSingleSeat(event) {
         target.classList.add('half');
         totalPax.textContent = parseInt(totalPax.textContent) + 1;
         totalHalf.textContent = parseInt(totalHalf.textContent) + 1;
-    } else if (target.classList.contains('half') && event.altKey) {
+    } else if (target.classList.contains('half')) {
         target.classList.remove('half');
         totalPax.textContent = parseInt(totalPax.textContent) - 1;
         totalHalf.textContent = parseInt(totalHalf.textContent) - 1;
